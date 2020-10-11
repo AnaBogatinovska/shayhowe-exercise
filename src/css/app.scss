@@ -1,1 +1,14 @@
 // app global css in SCSS form
+html, body {
+    font-family: 'Lato', 'Open Sans', sans-serif;
+  }
+
+  .content-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .inner-content {
+    width: 100%;
+    max-width: 1000px;
+  }

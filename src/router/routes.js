@@ -1,10 +1,13 @@
-
 const routes = [
   {
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/Index.vue') }
+      { path: 'home', name: 'home', component: () => import('pages/Home.vue') },
+      { path: 'speaker', name: 'speaker', component: () => import('pages/Speaker.vue') },
+      { path: 'schedule', name: 'schedule', component: () => import('pages/Schedule.vue') },
+      { path: 'venue', name: 'venue', component: () => import('pages/Venue.vue') },
+      { path: 'register', name: 'register', component: () => import('pages/Register.vue') },
     ]
   },
 
