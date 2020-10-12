@@ -584,7 +584,7 @@ export default {
     }
 }
 </script>
-<style lang="scss" scoped>
+<style lang="scss">
 .speaker {
     display: flex;
     justify-content: space-between;
