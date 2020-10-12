@@ -8,32 +8,21 @@
             </div>
             <div class="nav">
                 <div class="date">August 24–26th — Chicago, IL</div>
-                <ul class="nav-list">
-                    <li class="list-item">
-                        <router-link :to="{ name: 'home' }">home</router-link>
-                    </li>
-                    <li class="list-item">
-                        <router-link :to="{ name: 'speaker' }">speaker</router-link>
-                    </li>
-                    <li class="list-item">
-                        <router-link :to="{ name: 'schedule' }">schedule</router-link>
-                    </li>
-                    <li class="list-item">
-                        <router-link :to="{ name: 'venue' }">venue</router-link>
-                    </li>
-                    <li class="list-item">
-                        <router-link :to="{ name: 'register' }">register</router-link>
-                    </li>
-                </ul>
-            </div>
+                <Nav  :bold400="true" :uppercase="true"/>
+            </div>  
         </div>   
     </div>
 </div>
 </template>
 
 <script>
+import Nav from 'components/Nav'
+
 export default {
-    name:'Header'
+    name:'Header',
+    components: {
+        Nav
+    }
 }
 </script>
 <style lang="scss" scoped>
@@ -63,20 +52,5 @@ export default {
     font-size: 18px;
     font-weight: 600;
 }
-.nav-list {
-    display: flex;
-}
-.nav-list .list-item {
-    list-style: none;
-    text-transform: uppercase;
-    padding: 4px 8px;
-}
-.nav-list .list-item a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 700;
-}
-.nav-list .list-item a:hover {
-    color: $secondary;
-}
+
 </style>
