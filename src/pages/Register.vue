@@ -62,6 +62,8 @@ export default {
     name: 'Register',
     components: {
         TextBox
+    },
+    mounted() {
     }
 }
 </script>
